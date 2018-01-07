@@ -14,6 +14,7 @@
 		62A405BA1D47DA4D0054F6A0 /* FogShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62A405B81D47DA4D0054F6A0 /* FogShader.cpp */; };
 		62C3111A1CE172D000409D91 /* Flotsam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62C311181CE172D000409D91 /* Flotsam.cpp */; };
 		6A5716331E25BE6F00585EB2 /* CollisionSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A5716311E25BE6F00585EB2 /* CollisionSet.cpp */; };
+		A90633FF1EE602FD000DA6C0 /* LogbookPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A90633FD1EE602FD000DA6C0 /* LogbookPanel.cpp */; };
 		A90C15D91D5BD55700708F3A /* Minable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A90C15D71D5BD55700708F3A /* Minable.cpp */; };
 		A90C15DC1D5BD56800708F3A /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A90C15DA1D5BD56800708F3A /* Rectangle.cpp */; };
 		A93931F019880EFC00C2A87B /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9CC52A01950CA16004E4E22 /* SDL2.framework */; };
@@ -143,6 +144,11 @@
 		A9CC526D1950C9F6004E4E22 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CC526C1950C9F6004E4E22 /* Cocoa.framework */; };
 		A9CC52A11950CA16004E4E22 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CC52A01950CA16004E4E22 /* SDL2.framework */; };
 		A9D40D1A195DFAA60086EE52 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D40D19195DFAA60086EE52 /* OpenGL.framework */; };
+		DF8D57E11FC25842001525DA /* Dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF8D57DF1FC25842001525DA /* Dictionary.cpp */; };
+		DF8D57E51FC25889001525DA /* Visual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF8D57E21FC25889001525DA /* Visual.cpp */; };
+		DFAAE2A61FD4A25C0072C0A8 /* BatchDrawList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFAAE2A21FD4A25C0072C0A8 /* BatchDrawList.cpp */; };
+		DFAAE2A71FD4A25C0072C0A8 /* BatchShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFAAE2A41FD4A25C0072C0A8 /* BatchShader.cpp */; };
+		DFAAE2AA1FD4A27B0072C0A8 /* ImageSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFAAE2A81FD4A27B0072C0A8 /* ImageSet.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -176,6 +182,8 @@
 		62C311191CE172D000409D91 /* Flotsam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flotsam.h; path = source/Flotsam.h; sourceTree = "<group>"; };
 		6A5716311E25BE6F00585EB2 /* CollisionSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionSet.cpp; path = source/CollisionSet.cpp; sourceTree = "<group>"; };
 		6A5716321E25BE6F00585EB2 /* CollisionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionSet.h; path = source/CollisionSet.h; sourceTree = "<group>"; };
+		A90633FD1EE602FD000DA6C0 /* LogbookPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LogbookPanel.cpp; path = source/LogbookPanel.cpp; sourceTree = "<group>"; };
+		A90633FE1EE602FD000DA6C0 /* LogbookPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogbookPanel.h; path = source/LogbookPanel.h; sourceTree = "<group>"; };
 		A90C15D71D5BD55700708F3A /* Minable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Minable.cpp; path = source/Minable.cpp; sourceTree = "<group>"; };
 		A90C15D81D5BD55700708F3A /* Minable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Minable.h; path = source/Minable.h; sourceTree = "<group>"; };
 		A90C15DA1D5BD56800708F3A /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Rectangle.cpp; path = source/Rectangle.cpp; sourceTree = "<group>"; };
@@ -421,6 +429,16 @@
 		A9CC52711950C9F6004E4E22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9CC52A01950CA16004E4E22 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<absolute>"; };
 		A9D40D19195DFAA60086EE52 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		DF8D57DF1FC25842001525DA /* Dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dictionary.cpp; path = source/Dictionary.cpp; sourceTree = "<group>"; };
+		DF8D57E01FC25842001525DA /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dictionary.h; path = source/Dictionary.h; sourceTree = "<group>"; };
+		DF8D57E21FC25889001525DA /* Visual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Visual.cpp; path = source/Visual.cpp; sourceTree = "<group>"; };
+		DF8D57E31FC25889001525DA /* Visual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Visual.h; path = source/Visual.h; sourceTree = "<group>"; };
+		DFAAE2A21FD4A25C0072C0A8 /* BatchDrawList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BatchDrawList.cpp; path = source/BatchDrawList.cpp; sourceTree = "<group>"; };
+		DFAAE2A31FD4A25C0072C0A8 /* BatchDrawList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchDrawList.h; path = source/BatchDrawList.h; sourceTree = "<group>"; };
+		DFAAE2A41FD4A25C0072C0A8 /* BatchShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BatchShader.cpp; path = source/BatchShader.cpp; sourceTree = "<group>"; };
+		DFAAE2A51FD4A25C0072C0A8 /* BatchShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchShader.h; path = source/BatchShader.h; sourceTree = "<group>"; };
+		DFAAE2A81FD4A27B0072C0A8 /* ImageSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageSet.cpp; path = source/ImageSet.cpp; sourceTree = "<group>"; };
+		DFAAE2A91FD4A27B0072C0A8 /* ImageSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageSet.h; path = source/ImageSet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,6 +476,10 @@
 				A96862DA1AE6FD0A004FE1FE /* Audio.h */,
 				A96862DB1AE6FD0A004FE1FE /* BankPanel.cpp */,
 				A96862DC1AE6FD0A004FE1FE /* BankPanel.h */,
+				DFAAE2A21FD4A25C0072C0A8 /* BatchDrawList.cpp */,
+				DFAAE2A31FD4A25C0072C0A8 /* BatchDrawList.h */,
+				DFAAE2A41FD4A25C0072C0A8 /* BatchShader.cpp */,
+				DFAAE2A51FD4A25C0072C0A8 /* BatchShader.h */,
 				A96862DF1AE6FD0A004FE1FE /* BoardingPanel.cpp */,
 				A96862E01AE6FD0A004FE1FE /* BoardingPanel.h */,
 				6245F8231D301C7400A7A094 /* Body.cpp */,
@@ -491,6 +513,8 @@
 				5155CD721DBB9FF900EF090B /* Depreciation.h */,
 				A96862F81AE6FD0A004FE1FE /* Dialog.cpp */,
 				A96862F91AE6FD0B004FE1FE /* Dialog.h */,
+				DF8D57DF1FC25842001525DA /* Dictionary.cpp */,
+				DF8D57E01FC25842001525DA /* Dictionary.h */,
 				A96862FA1AE6FD0B004FE1FE /* DistanceMap.cpp */,
 				A96862FB1AE6FD0B004FE1FE /* DistanceMap.h */,
 				A96862FE1AE6FD0B004FE1FE /* DrawList.cpp */,
@@ -542,6 +566,8 @@
 				A96863261AE6FD0B004FE1FE /* Information.h */,
 				A96863271AE6FD0B004FE1FE /* Interface.cpp */,
 				A96863281AE6FD0B004FE1FE /* Interface.h */,
+				DFAAE2A81FD4A27B0072C0A8 /* ImageSet.cpp */,
+				DFAAE2A91FD4A27B0072C0A8 /* ImageSet.h */,
 				A9B99D001C616AD000BE7C2E /* ItemInfoDisplay.cpp */,
 				A9B99D011C616AD000BE7C2E /* ItemInfoDisplay.h */,
 				A96863291AE6FD0B004FE1FE /* LineShader.cpp */,
@@ -550,6 +576,8 @@
 				A968632C1AE6FD0B004FE1FE /* LoadPanel.h */,
 				A968632D1AE6FD0B004FE1FE /* LocationFilter.cpp */,
 				A968632E1AE6FD0B004FE1FE /* LocationFilter.h */,
+				A90633FD1EE602FD000DA6C0 /* LogbookPanel.cpp */,
+				A90633FE1EE602FD000DA6C0 /* LogbookPanel.h */,
 				A968632F1AE6FD0B004FE1FE /* main.cpp */,
 				A96863301AE6FD0B004FE1FE /* MainPanel.cpp */,
 				A96863311AE6FD0B004FE1FE /* MainPanel.h */,
@@ -679,6 +707,8 @@
 				A96863991AE6FD0D004FE1FE /* TradingPanel.h */,
 				A968639A1AE6FD0D004FE1FE /* UI.cpp */,
 				A968639B1AE6FD0D004FE1FE /* UI.h */,
+				DF8D57E21FC25889001525DA /* Visual.cpp */,
+				DF8D57E31FC25889001525DA /* Visual.h */,
 				A968639C1AE6FD0D004FE1FE /* Weapon.cpp */,
 				A968639D1AE6FD0D004FE1FE /* Weapon.h */,
 				A968639E1AE6FD0D004FE1FE /* WrappedText.cpp */,
@@ -841,6 +871,7 @@
 				A96863E41AE6FD0E004FE1FE /* PlanetPanel.cpp in Sources */,
 				A96863E01AE6FD0E004FE1FE /* Panel.cpp in Sources */,
 				A96863D21AE6FD0E004FE1FE /* MapDetailPanel.cpp in Sources */,
+				DFAAE2AA1FD4A27B0072C0A8 /* ImageSet.cpp in Sources */,
 				A96863D41AE6FD0E004FE1FE /* Mask.cpp in Sources */,
 				A96863E61AE6FD0E004FE1FE /* Point.cpp in Sources */,
 				A96863DE1AE6FD0E004FE1FE /* OutfitterPanel.cpp in Sources */,
@@ -877,6 +908,7 @@
 				A96863E81AE6FD0E004FE1FE /* Politics.cpp in Sources */,
 				A96863E91AE6FD0E004FE1FE /* Preferences.cpp in Sources */,
 				A96863F31AE6FD0E004FE1FE /* ShipEvent.cpp in Sources */,
+				DFAAE2A71FD4A25C0072C0A8 /* BatchShader.cpp in Sources */,
 				A96863D51AE6FD0E004FE1FE /* MenuPanel.cpp in Sources */,
 				A90C15DC1D5BD56800708F3A /* Rectangle.cpp in Sources */,
 				A9B99D021C616AD000BE7C2E /* ItemInfoDisplay.cpp in Sources */,
@@ -904,11 +936,13 @@
 				A96864051AE6FD0E004FE1FE /* Weapon.cpp in Sources */,
 				A96863EC1AE6FD0E004FE1FE /* Radar.cpp in Sources */,
 				A96863F61AE6FD0E004FE1FE /* ShopPanel.cpp in Sources */,
+				DFAAE2A61FD4A25C0072C0A8 /* BatchDrawList.cpp in Sources */,
 				A98150851EA9635D00428AD6 /* PlayerInfoPanel.cpp in Sources */,
 				A96863BC1AE6FD0E004FE1FE /* Files.cpp in Sources */,
 				A96863CB1AE6FD0E004FE1FE /* Information.cpp in Sources */,
 				A96863F91AE6FD0E004FE1FE /* Sprite.cpp in Sources */,
 				A96863A91AE6FD0E004FE1FE /* BoardingPanel.cpp in Sources */,
+				DF8D57E11FC25842001525DA /* Dictionary.cpp in Sources */,
 				A9B99D051C616AF200BE7C2E /* MapSalesPanel.cpp in Sources */,
 				A96863A01AE6FD0E004FE1FE /* Account.cpp in Sources */,
 				A90C15D91D5BD55700708F3A /* Minable.cpp in Sources */,
@@ -922,6 +956,7 @@
 				A96863B51AE6FD0E004FE1FE /* Dialog.cpp in Sources */,
 				A96863AF1AE6FD0E004FE1FE /* Conversation.cpp in Sources */,
 				A96863C51AE6FD0E004FE1FE /* GameEvent.cpp in Sources */,
+				A90633FF1EE602FD000DA6C0 /* LogbookPanel.cpp in Sources */,
 				A96863BD1AE6FD0E004FE1FE /* FillShader.cpp in Sources */,
 				A96863FF1AE6FD0E004FE1FE /* StellarObject.cpp in Sources */,
 				A96863A51AE6FD0E004FE1FE /* AsteroidField.cpp in Sources */,
@@ -933,6 +968,7 @@
 				6A5716331E25BE6F00585EB2 /* CollisionSet.cpp in Sources */,
 				A96863E11AE6FD0E004FE1FE /* Personality.cpp in Sources */,
 				A96863B41AE6FD0E004FE1FE /* Date.cpp in Sources */,
+				DF8D57E51FC25889001525DA /* Visual.cpp in Sources */,
 				A96863EF1AE6FD0E004FE1FE /* SavedGame.cpp in Sources */,
 				A96863A11AE6FD0E004FE1FE /* AI.cpp in Sources */,
 				A96863F71AE6FD0E004FE1FE /* Sound.cpp in Sources */,

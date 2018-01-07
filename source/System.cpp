@@ -30,12 +30,12 @@ using namespace std;
 namespace {
 	// Dynamic economy parameters: how much of its production each system keeps
 	// and exports each day:
-	static const double KEEP = .89;
-	static const double EXPORT = .10;
+	const double KEEP = .89;
+	const double EXPORT = .10;
 	// Standard deviation of the daily production of each commodity:
-	static const double VOLUME = 2000.;
+	const double VOLUME = 2000.;
 	// Above this supply amount, price differences taper off:
-	static const double LIMIT = 20000.;
+	const double LIMIT = 20000.;
 }
 
 const double System::NEIGHBOR_DISTANCE = 100.;
@@ -112,84 +112,161 @@ void System::Load(const DataNode &node, Set<Planet> &planets)
 		return;
 	name = node.Token(1);
 	
-	// If this is truly a change and not just being called by Load(), these sets
-	// of objects will be entirely replaced by any new ones, rather than adding
-	// the new ones on to the end of the list:
-	bool resetLinks = !links.empty();
-	bool resetAsteroids = !asteroids.empty();
-	bool resetFleets = !fleets.empty();
-	bool resetObjects = !objects.empty();
+	// For the following keys, if this data node defines a new value for that
+	// key, the old values should be cleared (unless using the "add" keyword).
+	set<string> shouldOverwrite = {"asteroids", "attributes", "fleet", "link", "object"};
 	
 	for(const DataNode &child : node)
 	{
-		if(child.Token(0) == "pos" && child.Size() >= 3)
-			position.Set(child.Value(1), child.Value(2));
-		else if(child.Token(0) == "government" && child.Size() >= 2)
-			government = GameData::Governments().Get(child.Token(1));
-		else if(child.Token(0) == "music" && child.Size() >= 2)
-			music = child.Token(1);
-		else if(child.Token(0) == "link")
+		// Check for the "add" or "remove" keyword.
+		bool add = (child.Token(0) == "add");
+		bool remove = (child.Token(0) == "remove");
+		if((add || remove) && child.Size() < 2)
 		{
-			if(resetLinks)
-			{
-				resetLinks = false;
+			child.PrintTrace("Skipping " + child.Token(0) + " with no key given:");
+			continue;
+		}
+		
+		// Get the key and value (if any).
+		const string &key = child.Token((add || remove) ? 1 : 0);
+		int valueIndex = (add || remove) ? 2 : 1;
+		bool hasValue = (child.Size() > valueIndex);
+		const string &value = child.Token(hasValue ? valueIndex : 0);
+		
+		// Check for conditions that require clearing this key's current value.
+		// "remove <key>" means to clear the key's previous contents.
+		// "remove <key> <value>" means to remove just that value from the key.
+		bool removeAll = (remove && !hasValue);
+		// If this is the first entry for the given key, and we are not in "add"
+		// or "remove" mode, its previous value should be cleared.
+		bool overwriteAll = (!add && !remove && shouldOverwrite.count(key));
+		overwriteAll |= (!add && !remove && key == "minables" && shouldOverwrite.count("asteroids"));
+		// Clear the data of the given type.
+		if(removeAll || overwriteAll)
+		{
+			// Clear the data of the given type.
+			if(key == "government")
+				government = nullptr;
+			else if(key == "music")
+				music.clear();
+			else if(key == "attributes")
+				attributes.clear();
+			else if(key == "link")
 				links.clear();
-			}
-			if(child.Size() >= 2)
-				links.insert(GameData::Systems().Get(child.Token(1)));
-		}
-		else if(child.Token(0) == "habitable" && child.Size() >= 2)
-			habitable = child.Value(1);
-		else if(child.Token(0) == "belt" && child.Size() >= 2)
-			asteroidBelt = child.Value(1);
-		else if(child.Token(0) == "asteroids" || child.Token(0) == "minables")
-		{
-			if(resetAsteroids)
-			{
-				resetAsteroids = false;
+			else if(key == "asteroids" || key == "minables")
 				asteroids.clear();
-			}
-			if(child.Size() >= 4)
-			{
-				const string &name = child.Token(1);
-				int count = child.Value(2);
-				double energy = child.Value(3);
-				
-				if(child.Token(0) == "asteroids")
-					asteroids.emplace_back(name, count, energy);
-				else
-					asteroids.emplace_back(GameData::Minables().Get(name), count, energy);
-			}
-		}
-		else if(child.Token(0) == "haze" && child.Size() >= 2)
-			haze = SpriteSet::Get(child.Token(1));
-		else if(child.Token(0) == "trade" && child.Size() >= 3)
-			trade[child.Token(1)].SetBase(child.Value(2));
-		else if(child.Token(0) == "fleet")
-		{
-			if(resetFleets)
-			{
-				resetFleets = false;
+			else if(key == "haze")
+				haze = nullptr;
+			else if(key == "trade")
+				trade.clear();
+			else if(key == "fleet")
 				fleets.clear();
-			}
-			if(child.Size() >= 3)
-				fleets.emplace_back(GameData::Fleets().Get(child.Token(1)), child.Value(2));
-		}
-		else if(child.Token(0) == "object")
-		{
-			if(resetObjects)
+			else if(key == "object")
 			{
+				// Make sure any planets that were linked to this system know
+				// that they are no longer here.
 				for(StellarObject &object : objects)
 					if(object.GetPlanet())
-					{
-						Planet *planet = planets.Get(object.GetPlanet()->Name());
-						planet->RemoveSystem(this);
-					}
-				resetObjects = false;
+						planets.Get(object.GetPlanet()->TrueName())->RemoveSystem(this);
+				
 				objects.clear();
 			}
-			LoadObject(child, planets);
+			
+			// If not in "overwrite" mode, move on to the next node.
+			if(overwriteAll)
+				shouldOverwrite.erase(key == "minables" ? "asteroids" : key);
+			else
+				continue;
 		}
+		
+		// Handle the attributes which can be "removed."
+		if(!hasValue && key != "object")
+		{
+			child.PrintTrace("Expected key to have a value:");
+			continue;
+		}
+		else if(key == "attributes")
+		{
+			if(remove)
+				for(int i = valueIndex; i < child.Size(); ++i)
+					attributes.erase(child.Token(i));
+			else
+				for(int i = valueIndex; i < child.Size(); ++i)
+					attributes.insert(child.Token(i));
+		}
+ 		else if(key == "link")
+		{
+			if(remove)
+				links.erase(GameData::Systems().Get(value));
+			else
+				links.insert(GameData::Systems().Get(value));
+		}
+		else if(key == "asteroids")
+		{
+			if(remove)
+			{
+				for(auto it = asteroids.begin(); it != asteroids.end(); ++it)
+					if(it->Name() == value)
+					{
+						asteroids.erase(it);
+						break;
+					}
+			}
+			else if(child.Size() >= 4)
+				asteroids.emplace_back(value, child.Value(valueIndex + 1), child.Value(valueIndex + 2));
+		}
+		else if(key == "minables")
+		{
+			const Minable *type = GameData::Minables().Get(value);
+			if(remove)
+			{
+				for(auto it = asteroids.begin(); it != asteroids.end(); ++it)
+					if(it->Type() == type)
+					{
+						asteroids.erase(it);
+						break;
+					}
+			}
+			else if(child.Size() >= 4)
+				asteroids.emplace_back(type, child.Value(valueIndex + 1), child.Value(valueIndex + 2));
+		}
+		else if(key == "fleet")
+		{
+			const Fleet *fleet = GameData::Fleets().Get(value);
+			if(remove)
+			{
+				for(auto it = fleets.begin(); it != fleets.end(); ++it)
+					if(it->Get() == fleet)
+					{
+						fleets.erase(it);
+						break;
+					}
+			}
+			else
+				fleets.emplace_back(fleet, child.Value(valueIndex + 1));
+		}
+		// Handle the attributes which cannot be "removed."
+		else if(remove)
+		{
+			child.PrintTrace("Cannot \"remove\" a specific value from the given key:");
+			continue;
+		}
+		else if(key == "pos" && child.Size() >= 3)
+			position.Set(child.Value(valueIndex), child.Value(valueIndex + 1));
+		else if(key == "government")
+			government = GameData::Governments().Get(value);
+		else if(key == "music")
+			music = value;
+		else if(key == "habitable")
+			habitable = child.Value(valueIndex);
+		else if(key == "belt")
+			asteroidBelt = child.Value(valueIndex);
+		else if(key == "haze")
+			haze = SpriteSet::Get(value);
+		else if(key == "trade" && child.Size() >= 3)
+			trade[value].SetBase(child.Value(valueIndex + 1));
+		else if(key == "object")
+			LoadObject(child, planets);
 		else
 			child.PrintTrace("Skipping unrecognized attribute:");
 	}
@@ -258,6 +335,22 @@ void System::UpdateNeighbors(const Set<System> &systems)
 	for(const auto &it : systems)
 		if(&it.second != this && it.second.Position().Distance(position) <= NEIGHBOR_DISTANCE)
 			neighbors.insert(&it.second);
+	
+	// Calculate the solar power and solar wind.
+	solarPower = 0.;
+	solarWind = 0.;
+	for(const StellarObject &object : objects)
+	{
+		solarPower += GameData::SolarPower(object.GetSprite());
+		solarWind += GameData::SolarWind(object.GetSprite());
+	}
+	
+	// Systems only have a single auto-attribute, "uninhabited." It is set if
+	// the system has no inhabited planets that are accessible to all ships.
+	if(IsInhabited(nullptr))
+		attributes.erase("uninhabited");
+	else
+		attributes.insert("uninhabited");
 }
 
 
@@ -329,6 +422,14 @@ const Government *System::GetGovernment() const
 const string &System::MusicName() const
 {
 	return music;
+}
+
+
+
+// Get the list of "attributes" of the planet.
+const set<string> &System::Attributes() const
+{
+	return attributes;
 }
 
 
@@ -415,6 +516,21 @@ double System::AsteroidBelt() const
 
 
 
+// Get the rate of solar collection and ramscoop refueling.
+double System::SolarPower() const
+{
+	return solarPower;
+}
+
+
+
+double System::SolarWind() const
+{
+	return solarWind;
+}
+
+
+
 // Check if this system is inhabited.
 bool System::IsInhabited(const Ship *ship) const
 {
@@ -422,7 +538,7 @@ bool System::IsInhabited(const Ship *ship) const
 		if(object.GetPlanet())
 		{
 			const Planet &planet = *object.GetPlanet();
-			if(!planet.IsWormhole() && planet.HasSpaceport() && planet.IsAccessible(ship))
+			if(!planet.IsWormhole() && planet.IsInhabited() && planet.IsAccessible(ship))
 				return true;
 		}
 	
@@ -435,12 +551,8 @@ bool System::IsInhabited(const Ship *ship) const
 bool System::HasFuelFor(const Ship &ship) const
 {
 	for(const StellarObject &object : objects)
-		if(object.GetPlanet())
-		{
-			const Planet &planet = *object.GetPlanet();
-			if(!planet.IsWormhole() && planet.HasSpaceport() && planet.CanLand(ship))
-				return true;
-		}
+		if(object.GetPlanet() && object.GetPlanet()->HasFuelFor(ship))
+			return true;
 	
 	return false;
 }
@@ -573,9 +685,10 @@ void System::LoadObject(const DataNode &node, Set<Planet> &planets, int parent)
 	StellarObject &object = objects.back();
 	object.parent = parent;
 	
-	if(node.Size() >= 2)
+	bool isAdded = (node.Token(0) == "add");
+	if(node.Size() >= 2 + isAdded)
 	{
-		Planet *planet = planets.Get(node.Token(1));
+		Planet *planet = planets.Get(node.Token(1 + isAdded));
 		object.planet = planet;
 		planet->SetSystem(this);
 	}

@@ -13,6 +13,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "HailPanel.h"
 
 #include "DrawList.h"
+#include "Font.h"
 #include "FontSet.h"
 #include "Format.h"
 #include "GameData.h"
@@ -43,8 +44,9 @@ HailPanel::HailPanel(PlayerInfo &player, const shared_ptr<Ship> &ship)
 	SetInterruptible(false);
 	
 	const Government *gov = ship->GetGovernment();
+	const Font &font = FontSet::Get(14);
 	if(!ship->Name().empty())
-		header = gov->GetName() + " " + ship->Noun() + " \"" + ship->Name() + "\":";
+		header = font.Truncate(gov->GetName() + " " + ship->Noun() + " \"" + ship->Name(), 328) + "\":";
 	else
 		header = ship->ModelName() + " (" + gov->GetName() + "): ";
 	// Drones are always unpiloted, so they never respond to hails.
@@ -55,11 +57,10 @@ HailPanel::HailPanel(PlayerInfo &player, const shared_ptr<Ship> &ship)
 		message = "(There is no response to your hail.)";
 	else if(!hasLanguage)
 		message = "(An alien voice says something in a language you do not recognize.)";
+	// Update default hail responses based on the hailed ship's government and status condition.
 	else if(gov->IsEnemy())
 	{
-		if(ship->IsDisabled())
-			message = GameData::Phrases().Get("hostile disabled")->Get();
-		else
+		if(!ship->IsDisabled())
 		{
 			SetBribe(gov->GetBribeFraction());
 			if(bribe)
@@ -72,8 +73,6 @@ HailPanel::HailPanel(PlayerInfo &player, const shared_ptr<Ship> &ship)
 		const Ship *flagship = player.Flagship();
 		if(!flagship->JumpsRemaining() || flagship->IsDisabled())
 			message = "Sorry, we can't help you, because our ship is disabled.";
-		else
-			message = "Our ship has been disabled! Please come board our ship and patch us up!";
 	}
 	else
 	{
@@ -97,16 +96,20 @@ HailPanel::HailPanel(PlayerInfo &player, const shared_ptr<Ship> &ship)
 			canGiveFuel = false;
 			canRepair = false;
 		}
-			
-		if(canGiveFuel || canRepair)
+		
+		if(ship->GetShipToAssist() == player.FlagshipPtr())
+			message = "Hang on, we'll be there in a minute.";
+		else if(canGiveFuel || canRepair)
+		{
 			message = "Looks like you've gotten yourself into a bit of trouble. "
 				"Would you like us to ";
-		if(canGiveFuel && canRepair)
-			message += "patch you up and give you some fuel?";
-		else if(canGiveFuel)
-			message += "give you some fuel?";
-		else if(canRepair)
-			message += "patch you up?";
+			if(canGiveFuel && canRepair)
+				message += "patch you up and give you some fuel?";
+			else if(canGiveFuel)
+				message += "give you some fuel?";
+			else if(canRepair)
+				message += "patch you up?";
+		}
 	}
 	
 	if(message.empty())
@@ -166,7 +169,7 @@ void HailPanel::Draw()
 		{
 			if(ship->GetGovernment()->IsEnemy())
 				info.SetCondition("can bribe");
-			else if(!ship->CanBeCarried())
+			else if(!ship->CanBeCarried() && ship->GetShipToAssist() != player.FlagshipPtr())
 				info.SetCondition("can assist");
 		}
 	}
