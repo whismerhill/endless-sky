@@ -68,14 +68,9 @@ private:
 	
 	Command show;
 	
-	// For displaying the GPU load.
-	double load = 0.;
-	double loadSum = 0.;
-	int loadCount = 0;
-	
-	// Keep track of how long a starting player has spent drifting in deep space.
-	int lostness = 0;
-	int lostCount = 0;
+	double load;
+	double loadSum;
+	int loadCount;
 	
 	Point dragSource;
 	Point dragPoint;
