@@ -403,7 +403,20 @@ NPC NPC::Instantiate(map<string, string> &subs, const System *origin, const Syst
 	// Pick the system for this NPC to start out in.
 	result.system = system;
 	if(!result.system && !location.IsEmpty())
-		result.system = location.PickSystem(origin);
+	{
+		// Find a destination that satisfies the filter.
+		vector<const System *> options;
+		for(const auto &it : GameData::Systems())
+		{
+			// Skip entries with incomplete data.
+			if(it.second.Name().empty())
+				continue;
+			if(location.Matches(&it.second, origin))
+				options.push_back(&it.second);
+		}
+		if(!options.empty())
+			result.system = options[Random::Int(options.size())];
+	}
 	if(!result.system)
 		result.system = (isAtDestination && destination) ? destination : origin;
 	
