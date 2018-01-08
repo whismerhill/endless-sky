@@ -67,6 +67,8 @@ You will also need libmingw32.a and libopengl32.a. Those should be included in t
 Windows (Visual Studio):
 
 To build 64-bit Endless Sky using Microsoft's Visual Studio
+0) get "windows universal CRT SDK" using Visual Studio Community installer or the windows control panel
+also you may want to get "windows 8.1 SDK" the same way
 
 1) Download the 64-bit development libraries, prebuilt specifically for use with Visual Studio:
 <fix-me-url-to-dev64-vs.zip>
