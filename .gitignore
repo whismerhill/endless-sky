@@ -14,3 +14,4 @@
 /bin/
 vs/*/.vs/*
 vs/*/*.vcxproj.user
+/.vs

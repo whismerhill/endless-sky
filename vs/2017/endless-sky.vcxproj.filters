@@ -15,729 +15,765 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\source\pi.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\shift.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\gl_header.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\WrappedText.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Weapon.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\UI.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Trade.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\TradingPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Table.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\System.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\StartConditions.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\StellarObject.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\SpriteShader.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\StarField.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\SpriteQueue.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\SpriteSet.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\SpaceportPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Sprite.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Sound.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ShipyardPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ShopPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ShipInfoPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ShipEvent.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ShipInfoDisplay.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Ship.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Shader.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Screen.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Set.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\SavedGame.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Rectangle.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\RingShader.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Sale.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Radar.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Random.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\PreferencesPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Projectile.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Preferences.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\PointerShader.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Politics.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Point.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\PlayerInfo.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\PlayerInfoPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\PlanetPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\PlanetLabel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Planet.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Personality.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Phrase.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Panel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Person.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\OutlineShader.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\OutfitInfoDisplay.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\OutfitterPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Outfit.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Music.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\NPC.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MissionPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Mortgage.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MissionAction.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Minable.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Mission.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Messages.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Mask.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MenuPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MapShipyardPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MapPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MapSalesPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MapOutfitterPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MainPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\MapDetailPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\LogbookPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\LoadPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\LocationFilter.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\LineShader.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Interface.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ItemInfoDisplay.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Information.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\HiringPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ImageBuffer.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\HailPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Hardpoint.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Government.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\GameEvent.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\GameData.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\FrameTimer.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Galaxy.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\FontSet.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Format.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\FogShader.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Font.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Flotsam.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\FillShader.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Fleet.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\File.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Files.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\EscortDisplay.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Engine.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\DrawList.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Effect.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Dialog.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\DistanceMap.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Depreciation.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Date.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\DataWriter.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\DataFile.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\DataNode.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Conversation.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ConversationPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ConditionSet.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Color.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Command.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\CollisionSet.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\ClickZone.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\CaptureOdds.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\CargoHold.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Body.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\BoardingPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\BankPanel.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Audio.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Armament.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\AsteroidField.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Account.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\Angle.h">
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\AI.h">
+    <ClInclude Include="..\..\source\*.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\*.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\*.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\*.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\*.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\*.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\*.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\source\main.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ConditionSet.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Files.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Shader.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\CaptureOdds.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Armament.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Minable.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\PreferencesPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Music.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Weapon.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Font.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\AI.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\WrappedText.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\TradingPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\UI.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Trade.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\System.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Table.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\StartConditions.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\StellarObject.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\SpriteShader.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\StarField.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\SpriteQueue.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\SpriteSet.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Sprite.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Sound.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\SpaceportPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ShopPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ShipInfoPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ShipyardPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ShipInfoDisplay.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Ship.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ShipEvent.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\SavedGame.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Screen.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\RingShader.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Random.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Rectangle.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Projectile.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Radar.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Preferences.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\PointerShader.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Politics.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Point.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\PlayerInfoPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\PlayerInfo.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\PlanetPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Planet.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\PlanetLabel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Personality.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Phrase.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Person.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Panel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\OutlineShader.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\OutfitterPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Outfit.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\OutfitInfoDisplay.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\NPC.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MissionPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Mortgage.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MissionAction.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Mission.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Messages.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MenuPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Mask.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MapShipyardPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MapSalesPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MapOutfitterPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MapPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MapDetailPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\LogbookPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\MainPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\LocationFilter.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\LoadPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\LineShader.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ItemInfoDisplay.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Interface.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ImageBuffer.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Information.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\HiringPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Hardpoint.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\HailPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Government.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\GameEvent.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\GameData.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\FrameTimer.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Galaxy.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\FontSet.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Format.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\FogShader.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Flotsam.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Fleet.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\FillShader.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\EscortDisplay.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\File.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Engine.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Effect.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\DrawList.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\DistanceMap.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Depreciation.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Dialog.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Date.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\DataWriter.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\DataNode.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\DataFile.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\ConversationPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Conversation.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Command.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Color.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\CollisionSet.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\CargoHold.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Body.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\BoardingPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\BankPanel.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Audio.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\AsteroidField.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Angle.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\Account.cpp">
+    <ClCompile Include="..\..\source\*.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\*.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\*.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\*.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\*.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\*.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\*.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
