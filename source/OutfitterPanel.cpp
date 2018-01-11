@@ -98,6 +98,17 @@ int OutfitterPanel::DrawPlayerShipInfo(const Point &point)
 
 
 
+int OutfitterPanel::DrawCargoHoldInfo(const Point &point) const
+{
+	Point drawPoint = point + Point(10, 0);
+
+	drawPoint.Y() += InfoPanel::DrawCargoHold(player.Cargo(), drawPoint, Point(DETAILS_WIDTH - 20, 20), 0, nullptr);
+
+	return drawPoint.Y() - point.Y();
+}
+
+
+
 bool OutfitterPanel::HasItem(const string &name) const
 {
 	const Outfit *outfit = GameData::Outfits().Get(name);

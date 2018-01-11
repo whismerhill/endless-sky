@@ -14,6 +14,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #define SHOP_PANEL_H_
 
 #include "Panel.h"
+#include "Color.h"
 
 #include "ClickZone.h"
 #include "OutfitInfoDisplay.h"
@@ -21,6 +22,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "ShipInfoDisplay.h"
 
 #include <map>
+#include <memory>
 #include <set>
 #include <string>
 #include <vector>
@@ -68,6 +70,14 @@ protected:
 	virtual void ToggleForSale();
 	virtual void ToggleCargo();
 	
+	bool ShipIsHere(std::shared_ptr<Ship> ship) const;
+	
+	// These can change based on configuration or resolution.
+	int DetailsWidth() const;
+	int PlayerShipWidth() const;
+	int SideWidth() const;
+	int IconCols() const;
+
 	// Only override the ones you need; the default action is to return false.
 	virtual bool KeyDown(SDL_Keycode key, Uint16 mod, const Command &command) override;
 	virtual bool Click(int x, int y, int clicks) override;
@@ -95,15 +105,17 @@ protected:
 		const Outfit *outfit = nullptr;
 	};
 	
-	int DetailsWidth() const; // ???
-	
+
 protected:
-	static const int SIDE_WIDTH = 250;
+	//static const int SIDE_WIDTH = 250;
 	static const int DETAILS_WIDTH = 250; //
 	static const int BUTTON_HEIGHT = 70;
 	static const int SHIP_SIZE = 250;
 	static const int OUTFIT_SIZE = 180;
-	
+	const Color COLOR_DETAILS_BG = Color(.1, 1.);
+	const Color COLOR_DIVIDERS = Color(.2, 1.);
+	const Color COLOR_BUTTONS_BG = Color(.3, 1.);
+
 	
 protected:
 	PlayerInfo &player;
@@ -115,17 +127,21 @@ protected:
 	Ship *dragShip = nullptr;
 	Point dragPoint;
 	std::set<Ship *> playerShips;
+	mutable int shipsHere = 0; // Total number of player ships in the shop
 	const Ship *selectedShip = nullptr;
 	const Outfit *selectedOutfit = nullptr;
 	
 	double mainScroll = 0.;
 	double sideScroll = 0.;
-	double detailsScroll = 0; //
-	double maxMainScroll = 0.;
-	double maxSideScroll = 0.;
-	double maxDetailsScroll = 0.; //changed from mutable int
+	double playerShipScroll = 0.;
+	double detailsScroll = 0.; //
+	mutable double maxMainScroll = 0.;
+	mutable double maxSideScroll = 0.;
+	mutable double maxPlayerShipScroll = 0.;
+	mutable double maxDetailsScroll = 0.; //changed from mutable int
 	bool dragMain = true;
 	bool dragDetails = true; // 
+	bool dragPlayerShip = true; // another PR ?????
 	int mainDetailHeight = 0;
 	int sideDetailHeight = 0;
 	bool scrollDetailsIntoView = false;
