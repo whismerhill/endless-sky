@@ -38,14 +38,13 @@ class Ship;
 class OutfitterPanel : public ShopPanel {
 public:
 	explicit OutfitterPanel(PlayerInfo &player);
-	
+
 	virtual void Step() override;
-	
-	
+
+
 protected:
 	virtual int TileSize() const override;
 	virtual int DrawPlayerShipInfo(const Point &point) override;
-	virtual int DrawCargoHoldInfo(const Point &point) const override;
 	virtual bool HasItem(const std::string &name) const override;
 	virtual void DrawItem(const std::string &name, const Point &point, int scrollY) override;
 	virtual int DividerOffset() const override;
@@ -61,8 +60,8 @@ protected:
 	virtual void DrawKey() override;
 	virtual void ToggleForSale() override;
 	virtual void ToggleCargo() override;
-	
-	
+
+
 private:
 	static bool ShipCanBuy(const Ship *ship, const Outfit *outfit);
 	static bool ShipCanSell(const Ship *ship, const Outfit *outfit);
@@ -76,7 +75,7 @@ private:
 	// Shared code for reducing the selected ships to those that have the
 	// same quantity of the selected outfit.
 	const std::vector<Ship *> GetShipsToOutfit(bool isBuy = false) const;
-	
+
 private:
 	// Record whether we've checked if the player needs ammo refilled.
 	bool checkedRefill = false;
@@ -86,7 +85,7 @@ private:
 	// Remember what ships are selected if the player switches to cargo.
 	Ship *previousShip = nullptr;
 	std::set<Ship *> previousShips;
-	
+
 	Sale<Outfit> outfitter;
 };
 
