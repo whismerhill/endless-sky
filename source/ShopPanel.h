@@ -42,7 +42,7 @@ public:
 	
 	virtual void Step() override;
 	virtual void Draw() override;
-
+	
 protected:
 	void DrawSidebar();
 	void DrawButtons();
@@ -85,8 +85,8 @@ protected:
 	virtual bool Scroll(double dx, double dy) override;
 	
 	int64_t LicenseCost(const Outfit *outfit) const;
-
-
+	
+	
 protected:
 	class Zone : public ClickZone<const Ship *> {
 	public:
@@ -102,8 +102,8 @@ protected:
 		double scrollY = 0.;
 		const Outfit *outfit = nullptr;
 	};
-
-
+	
+	
 protected:
 	static const int SIDE_WIDTH = 250;
 	static const int BUTTON_HEIGHT = 70;
@@ -112,8 +112,8 @@ protected:
 	const Color COLOR_DETAILS_BG = Color(.1, 1.);
 	const Color COLOR_DIVIDERS = Color(.2, 1.);
 	const Color COLOR_BUTTONS_BG = Color(.3, 1.);
-
-
+	
+	
 protected:
 	PlayerInfo &player;
 	// Remember the current day, for calculating depreciation.
@@ -157,8 +157,8 @@ protected:
 	
 	mutable Point warningPoint;
 	mutable std::string warningType;
-
-
+	
+	
 private:
 	bool DoScroll(double dy);
 	void SideSelect(int count);
