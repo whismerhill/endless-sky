@@ -38,6 +38,8 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "System.h"
 #include "UI.h"
 
+#include "gl_header.h"
+
 #include <cmath>
 #include <sstream>
 #include <string>
@@ -100,7 +102,8 @@ void MainPanel::Step()
 		bool canRefuel = player.GetSystem()->HasFuelFor(*flagship);
 		if(isActive && !flagship->IsHyperspacing() && !flagship->JumpsRemaining() && !canRefuel)
 			isActive = !DoHelp("stranded");
-		if(isActive && flagship->Position().Length() > 10000. && player.GetDate() <= GameData::Start().GetDate() + 4)
+		if(isActive && flagship->Position().Length() > 10000. && player.GetDate() <= GameData::Start().GetDate() + 4 
+			&& !flagship->IsHyperspacing())
 		{
 			++lostness;
 			int count = 1 + lostness / 3600;
